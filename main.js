@@ -50,13 +50,15 @@ console.log(type);
 // Conditions
 /* Check highIncome, CibilScore -> Loan Eligible
   Otherwise, Not Loan Eligible.*/
-
+ /* Logical AND, Both operands are True, Logical OR, Anyone operands are True ,Not, Opposite Output*/
   let highIncome =true;
   let cibilScore =false;
 
-  console.log(highIncome && cibilScore); // Logical AND, Both operands are True
-  console.log(highIncome || cibilScore); // Logical OR, Anyone operands are True
-  console.log(!highIncome); // Not, Opposite Output
+  let eligiblePerson = highIncome || cibilScore;
+  let applicationStatus = !eligiblePerson;
+
+  console.log("Loan Creteria:" + eligiblePerson);
+  console.log("Application Approval Status:" + applicationStatus); 
 
 
 
