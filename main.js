@@ -60,5 +60,15 @@ console.log(type);
   console.log("Loan Creteria:" + eligiblePerson);
   console.log("Application Approval Status:" + applicationStatus); 
 
+// Logical Operation with Non Boolean Value
+// Select Favourite colour Program
+
+  let userColor = undefined;
+  let defaultColor = "Red";
+
+  let selectedColor = userColor || defaultColor;
+
+  console.log("Selected Color: " + selectedColor);
+
 
 
