@@ -70,5 +70,23 @@ console.log(type);
 
   console.log("Selected Color: " + selectedColor);
 
+// Bitwise Operator
+
+// & - Bitwise AND , | - Bitwise OR
+
+// Approval Permission Program using bitwise operator
+
+const workPermission =1;
+const leavePermission =2;
+const executePermission =4;
+
+let myPermission =0;
+
+myPermission = workPermission | leavePermission;
+
+let message = (workPermission | leavePermission) ? "Yes" : "No";
+
+console.log(message);
+
 
 
