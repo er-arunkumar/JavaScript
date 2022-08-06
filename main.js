@@ -139,3 +139,56 @@ switch (true) {
   default:
     console.log("Enter vaild number only.");
 }
+
+//Loops -- For Loop
+
+for(let i=0; i<5; i++){
+  if(i%2 !==0){
+  console.log("For Loop - Number # " + i );
+  }
+}
+
+//While Loop
+
+let i=1;
+while(i<5){
+  if(i%2==0){
+    console.log("While Loop - Number # "+i);
+  }i++;
+}
+
+// Do while Loop
+
+let a=1;
+
+do{
+  if(a%2==0){
+  console.log("Do-While Loop - Number # " +a);
+  }
+  a++;
+}while(a<=10);
+
+// For in Loop
+
+let personDetail ={
+  Name:"Arun",
+  Age:23,
+  Qualification: "B.E.,"
+};
+
+for(let key in personDetail){
+  console.log(key + ": " ,personDetail[key]);
+}
+
+let colors = ["red","Blue","Green"];
+for(let key in colors ){
+  console.log(colors[key]);
+}
+
+// For of Loop -- Using Array more efficient way
+
+let animals =["Lion","Tiger","Elephant","Rabbit"];
+
+for(let key of animals){
+  console.log("Animals: ",key);
+}
